@@ -1,0 +1,12 @@
+{
+  "topology_type": "linear",
+  "switches": 1,
+  "links": 2,
+  "config": {
+    "exam_clients": 20,
+    "background_clients": 40,
+    "switch_bandwidth_mbps": 100,
+    "exam_server_ip": "10.0.0.200/24",
+    "gateway_ip": "10.0.0.254/24"
+  }
+}

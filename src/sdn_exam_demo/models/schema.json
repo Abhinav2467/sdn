@@ -1,0 +1,26 @@
+{
+  "features": [
+    "active_exam_clients",
+    "active_background_clients",
+    "measured_throughput_mbps",
+    "exam_rtt_ms",
+    "packet_loss_percent",
+    "iperf_flow_count",
+    "queue_utilization_percent",
+    "exam_window_active",
+    "exam_window_prestage",
+    "time_to_exam_seconds"
+  ],
+  "continuous_features": [
+    "exam_rtt_ms",
+    "measured_throughput_mbps",
+    "packet_loss_percent",
+    "time_to_exam_seconds"
+  ],
+  "feature_count": 10,
+  "target": "target_limit",
+  "policy_guardrails": {
+    "min_background_new_flows": 1.0,
+    "max_background_new_flows": 4.0
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "topology_type": "tree",
+  "switches": 3,
+  "depth": 2,
+  "fanout": 2,
+  "config": {
+    "exam_clients": 20,
+    "background_clients": 40,
+    "switch_bandwidth_mbps": 100,
+    "exam_server_ip": "10.0.0.200/24",
+    "gateway_ip": "10.0.0.254/24"
+  }
+}

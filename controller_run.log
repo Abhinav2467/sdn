@@ -1,0 +1,22 @@
+2 RLock(s) were not greened, to fix this error make sure you run eventlet.monkey_patch() before importing any other modules.
+loading app ryu_app/exam_qos_controller.py
+loading app os_ken.controller.ofp_handler
+instantiating app ryu_app/exam_qos_controller.py of ExamQoSController
+Initializing controller with policy mode: PolicyMode.ML
+Successfully loaded ML model from /home/videsh/Downloads/phase_final/phase_final/New project/src/sdn_exam_demo/models/admitter_model.joblib
+instantiating app os_ken.controller.ofp_handler of OFPHandler
+New switch connection: cleared stale active flow keys and reset policy state.
+Dynamically updated topology.exam_clients boundary in config to: 3
+flow src=10.0.0.1 dst=10.0.0.200 class=exam queue=1 allow=True est_load_mbps=2.00 limit=0 reasons=exam-destination-ip latency_ms=0.044
+flow src=10.0.0.200 dst=10.0.0.1 class=exam queue=1 allow=True est_load_mbps=4.00 limit=0 reasons=exam-destination-ip latency_ms=0.017
+flow src=10.0.0.2 dst=10.0.0.200 class=exam queue=1 allow=True est_load_mbps=6.00 limit=0 reasons=exam-destination-ip latency_ms=0.034
+flow src=10.0.0.200 dst=10.0.0.2 class=exam queue=1 allow=True est_load_mbps=8.00 limit=0 reasons=exam-destination-ip latency_ms=0.142
+flow src=10.0.0.3 dst=10.0.0.200 class=exam queue=1 allow=True est_load_mbps=10.00 limit=0 reasons=exam-destination-ip latency_ms=0.035
+flow src=10.0.0.200 dst=10.0.0.3 class=exam queue=1 allow=True est_load_mbps=12.00 limit=0 reasons=exam-destination-ip latency_ms=0.015
+flow src=10.0.0.4 dst=10.0.0.200 class=background queue=0 allow=True est_load_mbps=16.00 limit=2 reasons=mode-ml,graceful-throttling latency_ms=12.199
+flow src=10.0.0.200 dst=10.0.0.4 class=background queue=0 allow=True est_load_mbps=20.00 limit=2 reasons=mode-ml,graceful-throttling latency_ms=8.558
+flow src=10.0.0.5 dst=10.0.0.200 class=background queue=0 allow=False est_load_mbps=24.00 limit=2 reasons=mode-ml,graceful-throttling,admission-control latency_ms=9.621
+flow src=10.0.0.6 dst=10.0.0.200 class=background queue=0 allow=False est_load_mbps=24.00 limit=2 reasons=mode-ml,graceful-throttling,admission-control latency_ms=10.151
+flow src=10.0.0.7 dst=10.0.0.200 class=background queue=0 allow=False est_load_mbps=24.00 limit=2 reasons=mode-ml,graceful-throttling,admission-control latency_ms=9.937
+flow src=10.0.0.8 dst=10.0.0.200 class=background queue=0 allow=False est_load_mbps=24.00 limit=2 reasons=mode-ml,graceful-throttling,admission-control latency_ms=10.392
+flow src=10.0.0.9 dst=10.0.0.200 class=background queue=0 allow=False est_load_mbps=24.00 limit=2 reasons=mode-ml,graceful-throttling,admission-control latency_ms=9.208

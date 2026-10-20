@@ -1,0 +1,28 @@
+# Error Tracking Log
+
+## Initial Critique (Iteration 1)
+[Resolved] Short, incomplete manuscript missing mathematical details and broad references.
+
+## Structural Critique (Iteration 3)
+[Resolved] Missing major academic sections (Related Work, Experimental Setup, Detailed Evaluation, Limitations, Future Work, Reproducibility Statement).
+
+## Substantive Critique (Iteration 4)
+[Resolved] Lack of deep academic rigor, missing RQs, SLA context, and ECMP multi-path analysis.
+
+## Visual Evidence Critique (Iteration 5)
+[Resolved] Successfully generated and embedded visual plots directly correlated with statistical tables.
+
+## Final Rigorous Review (Iteration 6)
+[Resolved] Corrected misaligned p-values, calculated genuine rank-biserial effect sizes, and applied microtype formatting to eradicate Underfull warnings.
+
+## Methodological Honesty Audit (Iteration 7)
+[Resolved] Removed fictional 90-run holdout claim, EWMA telemetry smoothing, and 1-second OpenFlow polling. Accurately documented 10-fold CV and event-driven PacketIn parsing.
+
+## Secondary De-Fabrication Audit (Iteration 8)
+A secondary rigorous audit uncovered two remaining subtle fabrications regarding physical emulation and mathematical space definitions.
+1. **Fabricated Emulation Queues:** The manuscript falsely claimed QoS was enforced via Queue 1 (Best Effort) and Queue 2 (Priority). The actual Mininet OVS mappings defined in `demo_config.json` use Queue 0 (Best Effort) and Queue 1 (Priority).
+2. **Fabricated Feature Dimensions:** The manuscript falsely defined the extracted telemetry vector $X_{t}$ as having only 4 dimensions ($M=4$). The `train_model.py` pipeline explicitly builds and trains on a 10-dimensional feature array ($M=10$).
+
+## Action Items (Iteration 8)
+1. Rewrite Section III.A to explicitly reflect Open vSwitch Queue 0 and Queue 1 allocations.
+2. Rewrite Section IV.A and IV.C to accurately define the full 10-dimensional mathematical vector $X_{t} \in \mathbb{R}^{10}$.
